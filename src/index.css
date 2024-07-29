@@ -1,0 +1,14 @@
+.notes{
+  display: flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+}
+
+.left_notes, .right_notes{
+  border: 3px solid black;
+  width: 45%;
+  height: 85vh;
+  overflow: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
