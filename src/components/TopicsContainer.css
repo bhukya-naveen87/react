@@ -1,0 +1,34 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.main-container{
+    display: flex;
+    overflow: hidden;
+}
+
+.topics{
+    width: 30%;
+}
+
+.topic-details{
+    width: 70%;
+}
+
+.topics, .topic-details{
+    border: 1px solid;
+    height: calc(100vh - 30px);
+    padding: 10px;
+    margin: 20px;
+}
+
+.main-topic{
+    margin: 10px 0px;
+    border-bottom: 0.5px solid grey;
+    padding-bottom: 3px;
+    cursor: pointer;
+    user-select: none;
+}
