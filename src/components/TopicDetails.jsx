@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import UseMemoHookIssue from './Hooks/UseMemoHookClass/UseMemoHookIssue'
-import UseCallBackHook from './Hooks/UseCallBackHook'
-import UseMemoNotes from './Hooks/UseMemoHookClass/UseMemoNotes'
-import UseMemoHookSolution from './Hooks/UseMemoHookClass/UseMemoHookSolution'
+import UseCallBackHook from './Hooks/UseCallBackHookClass/UseCallBackHook'
+import UseMemoHook from './Hooks/UseMemoHookClass/UseMemoHook'
+import CustomHookClass from './Hooks/CustomHooks/CustomHookClass'
 
 const TopicDetails = (props) => {
 
@@ -11,20 +10,14 @@ const TopicDetails = (props) => {
   const setTopicData = ()=>{
     if(selectedTopic === "UseMemoHook"){
       return <>
-        <div>
-          <h4>Notes</h4>
-          <UseMemoNotes />
-          <hr />
-          <h4>With Issue</h4>
-          <UseMemoHookIssue />
-          <hr />
-          <h4>With Solution</h4>
-          <UseMemoHookSolution />
-        </div>
+        <UseMemoHook />
       </>
     }
     if(selectedTopic === "UseCallBackHook"){
       return <UseCallBackHook />
+    }
+    if(selectedTopic === "CustomHook"){
+      return <CustomHookClass />
     }
   }
 

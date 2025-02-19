@@ -5,7 +5,7 @@ import './TopicsContainer.css'
 
 const allTopics = {
   basics: ["JSX", "Components"],
-  hooks: ["UseMemoHook", "UseCallBackHook"],
+  hooks: ["UseMemoHook", "UseCallBackHook", "CustomHook"],
   advanced: ["redux"]
 }
 
