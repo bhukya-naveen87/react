@@ -4,7 +4,7 @@ import TopicDetails from './TopicDetails'
 import './TopicsContainer.css'
 
 const allTopics = {
-  basics: ["JSX", "Components"],
+  basics: ["JSX", "Components", "Stop Propagation", "UseRef"],
   hooks: ["UseMemoHook", "UseCallBackHook", "CustomHook"],
   advanced: ["redux"]
 }

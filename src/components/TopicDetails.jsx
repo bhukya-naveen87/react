@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import UseCallBackHook from './Hooks/UseCallBackHookClass/UseCallBackHook'
 import UseMemoHook from './Hooks/UseMemoHookClass/UseMemoHook'
 import CustomHookClass from './Hooks/CustomHooks/CustomHookClass'
+import StopPropagation from './Basics/StopPropagation'
+import UseRefClass from './Basics/UseRefClass'
 
 const TopicDetails = (props) => {
 
@@ -18,6 +20,12 @@ const TopicDetails = (props) => {
     }
     if(selectedTopic === "CustomHook"){
       return <CustomHookClass />
+    }
+    if(selectedTopic === "Stop Propagation"){
+      return <StopPropagation />
+    }
+    if(selectedTopic === "UseRef"){
+      return <UseRefClass />
     }
   }
 
